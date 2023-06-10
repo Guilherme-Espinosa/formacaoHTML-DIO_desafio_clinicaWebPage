@@ -7,7 +7,7 @@ body {
     justify-content: center;
 }
 
-.wrapper {
+.container {
     width: 1200px;
     display: flex;
     margin: 0 auto;
@@ -21,7 +21,7 @@ body {
 .menu {
     width: 15%;
     background-color: aqua;
-    padding: 10px 20px 0px;
+    padding: 10px 10px 0px;
 }
 .header {
     background-color: rgb(5, 108, 108);
