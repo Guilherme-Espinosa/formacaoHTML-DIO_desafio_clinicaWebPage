@@ -18,11 +18,7 @@ body {
     min-width: 85vw;
 }
 
-.menu {
-    background-color: aqua;
-    padding: 10px 10px 0px 0px;
-    min-width: 15vw;
-}
+/* --- */
 
 .header {
     background-color: var(--white);
@@ -32,7 +28,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
 }
 
 .header img {

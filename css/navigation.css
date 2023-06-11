@@ -1,0 +1,32 @@
+.menu {
+    background-image: url(../assets/graphism1.png);
+    background-size: 1300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--white);
+    padding: 10px 10px 0px 0px;
+    min-width: 15vw;
+    text-decoration: none;
+}
+
+.menu ul{
+    margin-top: 15vw;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.menu ul li{
+    padding: 5px;
+    margin: 5px;
+    background-color: var(--white);
+    border: 1px solid var(--light-grey);
+    border-radius: 5px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+}
+
+.menu ul li a:visited{
+    text-decoration: none;
+}
