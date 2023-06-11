@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    display: flex;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    background-color: var(--white);
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    min-width: 85vw;
+}
+
+.content {
+    background-color: white;
+    min-height: 300px;
+    padding: 20px;
+}
+
