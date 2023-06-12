@@ -1,0 +1,33 @@
+article {
+  text-align: center;
+  margin: 50px;
+}
+
+article p{
+  text-align: justify;
+  text-indent: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.price-table {
+  width: 90%;
+  margin-left: 50px;
+  border-collapse: collapse;
+}
+
+.price-table th,
+.price-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.price-table th {
+  background-color: #6998e8;
+  font-weight: bold;
+}
+
+.price-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
