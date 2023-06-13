@@ -3,6 +3,11 @@ article {
   margin: 50px;
 }
 
+article img{
+  height: 250px;
+  border-radius: 5%;
+}
+
 article p{
   text-align: justify;
   text-indent: 50px;

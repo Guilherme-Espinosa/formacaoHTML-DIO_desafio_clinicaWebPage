@@ -17,6 +17,7 @@ body {
     flex-flow: column;
     min-width: 85%;
     padding-left: 150px;
+    /* border: 1px solid black; */
 }
 
 .content {

@@ -4,5 +4,26 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+footer div{
+    height: 100%;
+}
+
+footer .separator{
+    height: 80%;
+    width: 2px;
+    border-radius: 15%;
+    background-color: aliceblue;
+}
+
+footer div h5, h6 {
+    padding: 0;
+    margin: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(243, 241, 241);
+    text-align: center;
 }
