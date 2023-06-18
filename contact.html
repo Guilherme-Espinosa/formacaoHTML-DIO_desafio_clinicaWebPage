@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HLMC - FALE CONOSCO</title>
+    <title>CONTATE-NOS</title>
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/colors.css">
     <link rel="stylesheet" href="./css/navigation.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/articles.css">
+    <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/footer.css">
 </head>
+
 <body>
     <div class="container">
         <nav class="menu">
@@ -19,8 +22,7 @@
             <ul>
                 <li><a href="./index.html">PÁGINA INICIAL</a></li>
                 <li><a href="./about.html">SOBRE NÓS</a></li>
-                <li><a href="./specialities.html">ESPECIALIDADES</a></li>
-                <li><a href="./openingHours.html">HORÁRIOS</a></li>
+                <li><a href="./openingHours.html">ATENDIMENTO</a></li>
             </ul>
         </nav>
 
@@ -30,12 +32,166 @@
                 <H1>Healthy Living Medical Clinic</H1>
                 <!-- Aqui vai o seu header -->
             </header>
-    
+
             <section class="content">
-                Content
-                <!-- Aqui vai o seu conteúdo -->
+                <article>
+                    <img src="https://img.freepik.com/fotos-gratis/vista-de-construcao-projetada-em-vidro_23-2148230382.jpg?w=740&t=st=1686814740~exp=1686815340~hmac=be8e2a1e698ccceb38048aa876f5b213bf2d392ffde6d4c069fbd65039bd0c84"
+                        alt="Imagem mostra um grande prédio, com uma imponente e moderna frente da Clínica.">
+                    <h2>Bem-vindo à Healthy Living Medical Clinic</h2>
+
+                    <p>A Healthy Living Medical Clinic está localizada no seguinte endereço:</p>
+                    <p>Rua das Flores, 1234, Bairro Felicidade, Cidade Belo Horizonte - Estado de Minas Gerais, Brasil.
+                    </p>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d938.3091324707061!2d-43.92810850663586!3d-19.829942411071336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1687008263976!5m2!1spt-BR!2sbr"
+                        width="900" height="400" style="border:1px solid silver;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <p>Se você tiver alguma dúvida adicional ou precisar de mais informações, estamos à disposição para
+                        ajudar. Pode nos visitar ou entrar em contato através dos seguintes telefones: <strong>Telefone:
+                            +55(85) 9 5531.5932 / Whatsapp: +55(85) 9 5531.5942</strong>.</p>
+
+                    <p>Também pode preencher o formularário abaixo para que entremos em contato você. Devemos lembrar
+                        que essa opção possui um retorno mais lento, portanto se for uma urgência clinica, não exite em
+                        nos ligar ou comparecer diretamente num de nossos consultórios.</p>
+                </article>
+
+                <form>
+                    <fieldset id="nome-sobrenome" class="grupo">
+                        <div class="campo">
+                            <label for="nome"><strong>Nome:</strong></label>
+                            <input type="text" name="nome" id="nome" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                            <input type="text" name="sobrenome" id="sobrenome" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="nomeSocial"><strong>Nome social:</strong></label>
+                            <input type="text" name="nomeSocial id=" nomeSocial>
+                        </div>
+
+                        <div class="campo">
+                            <label for="numPlan"><strong>n° Plano (se houver):</strong></label>
+                            <input type="number" name="numPlan" id="numPlan">
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="contact" class="grupo">
+                        <div class="campo">
+                            <label for="email"><strong>E-mail:</strong></label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="campo">
+                            <label for="tel"><strong>Telefone:</strong></label>
+                            <input type="tel" name="tel" id="tel" required>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="pacient" class="grupo">
+                        <div id="service" class="campo">
+                            <label><strong>O atendimento é para adulto ou criança?</strong></label>
+                            <label>
+                                <input type="radio" name="adult" value="Adulto">Adulto
+                            </label>
+                            <label>
+                                <input type="radio" name="child" value="Criança">Criança
+                            </label>
+                            <label>
+                                <b>Dt. de Nasc.</b><input type="date" name="age" id="age">
+                            </label>
+
+                            <label for="sex"><strong>Sexo</strong></label>
+                            <select name="sex" id="sex">
+                                <option selected disabled value="">
+                                    selecione
+                                </option>
+                                <option>Masculino</option>
+                                <option>Feminino</option>
+                                <option>Prefiro não informar</option>
+                            </select>
+                        </div>
+
+                        <div id="sintomas">
+                            <label>
+                                <strong>Algum dos sintomas a seguir estão presentes?</strong>
+                            </label>
+
+                            <div class="checkSintomas">
+                                <input type="checkbox" name="sintoma1" id="sintoma1" value="cefaleia">
+                                <label for="sintoma1">Dor de cabeça persistente ou recorrente</label>
+                            </div>
+
+                            <div class="checkSintomas">
+                                <input type="checkbox" name="sintoma2" id="sintoma2" value="febre">
+                                <label for="sintoma2">Febre inexplicada</label>
+                            </div>
+
+                            <div class="checkSintomas">
+                                <input type="checkbox" name="sintoma3" id="sintoma3"
+                                    value="tosse_dificuldade-respiratoria">
+                                <label for="sintoma3">Tosse persistente ou dificuldade respiratória</label>
+                            </div>
+
+                            <div class="checkSintomas">
+                                <input type="checkbox" name="sintoma4" id="sintoma4" value="dor-abdominal">
+                                <label for="sintoma4">Dor abdominal ou desconforto digestivo</label>
+                            </div>
+
+                            <div class="checkSintomas">
+                                <input type="checkbox" name="sintoma5" id="sintoma5" value="dor-muscular_articulatorio">
+                                <label for="sintoma5">Dor nas articulações ou musculares</label>
+                            </div>
+
+                            <div class="checkSintomas">
+                                <input type="checkbox" name="sintoma6" id="sintoma6" value="fadiga">
+                                <label for="sintoma6">Fadiga crônica ou falta de energia</label>
+                            </div>
+
+                            <div class="checkSintomas">
+                                <input type="checkbox" name="sintoma7" id="sintoma7" value="transtorno-humor">
+                                <label for="sintoma7">Alterações de humor, ansiedade ou depressão</label>
+                            </div>
+
+                            <div class="checkSintomas">
+                                <input type="checkbox" name="sintoma8" id="sintoma8" value="disturbio-sono">
+                                <label for="sintoma8">Problemas de sono, insônia ou sonolência excessiva</label>
+                            </div>
+
+                            <div class="checkSintomas">
+                                <input type="checkbox" name="sintoma9" id="sintoma9"
+                                    value="dermatite_urticaria_erupcoes">
+                                <label for="sintoma9">Alergias, coceira na pele ou erupções cutâneas</label>
+                            </div>
+
+                            <div class="checkSintomas">
+                                <input type="checkbox" name="sintoma9" id="sintoma9" value="disturbio-alimentar">
+                                <label for="sintoma9">Distúrbios alimentares ou problemas de peso</label>
+                            </div>
+                        </div>
+
+                        <div id="textArea" class="campo">
+                            <label><strong>Por favor, se houverem outros sintomas ou informações que precise informar,
+                                    utilize o campo adiante.</strong></label>
+                            <textarea name="experiencia" id="experiencia" cols="60" rows="6"
+                                style="width: 60em"></textarea>
+                        </div>
+
+                        <div id="botoes-finais" class="campo">
+                            <button type="reset" class="botao-apagarTudo">
+                                Apagar tudo
+                            </button>
+                            <button type="submit" class="botao-concluir">
+                                Concluir cadastro
+                            </button>
+                        </div>
+                    </fieldset>
+                </Form>
             </section>
-    
+
             <footer class="footer">
                 <div class="contact">
                     <h5>Informações de contato</h5>
@@ -43,13 +199,15 @@
                 </div>
 
                 <div class="separator"></div>
-                
+
                 <div class="address">
                     <h5>Onde encontrar</h4>
-                    <h6>Endereço: Rua das Flores, 1234, Bairro Felicidade, Cidade Feliz - Estado do Amor</h6>
+                        <h6>Endereço: Rua das Flores, 1234, Bairro Felicidade, <br>Cidade Belo Horizonte - Estado de
+                            Minas Gerais, Brasil</h6>
                 </div>
             </footer>
         </main>
     </div>
 </body>
+
 </html>

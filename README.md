@@ -67,7 +67,7 @@ No **Menu**, ficará localizado o menu de navegação (ah vá!), no **Header** d
         - E-mail (type="email")
         - Assunto (type="text")
         - Mensagem (textarea)
-        - Botões de envias e limpar formulário
+        - Botões de enviar e limpar formulário
 
 3. **Menu** e **Footer** padrões em todas as páginas.
 
