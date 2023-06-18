@@ -1,0 +1,26 @@
+.tooltip {
+    display: inline-block;
+    position: absolute;
+    width: 120px;
+    height: 130px;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    padding: 10px;
+    margin-top: 70px;
+    margin-left: 5px;
+    border-radius: 10px;
+    border: solid red 2px;
+}
+
+.tooltip::after {
+    /* z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s; */
+  }
+  
+  .tooltip:hover::after {
+    visibility: visible;
+    opacity: 1;
+  }
+  

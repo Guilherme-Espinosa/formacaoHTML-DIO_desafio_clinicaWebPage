@@ -1,7 +1,6 @@
 form {
     padding: 0px;
-    background-color: azure;
-    border: 3px solid black;
+    background-color: aliceblue;
     display: flex;
     flex-direction: column;
 }
